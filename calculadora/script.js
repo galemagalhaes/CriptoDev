@@ -145,13 +145,13 @@ class Calculator {
     }
     switch (operation) {
       case "x":
-        return leftOperand * rightOperand;
+        return (leftOperand * rightOperand).toFixed(3);
       case "/":
-        return leftOperand / rightOperand;
+        return (leftOperand / rightOperand).toFixed(3);
       case "-":
-        return leftOperand - rightOperand;
+        return (leftOperand - rightOperand).toFixed(3);
       case "+":
-        return leftOperand + rightOperand;
+        return (leftOperand + rightOperand).toFixed(3);
       default:
         return
     }
@@ -214,5 +214,6 @@ decimalButton.addEventListener("click", () => {
 equalsButton.addEventListener("click", () => {
   calculator.generateResult();
 });
+
 
 
